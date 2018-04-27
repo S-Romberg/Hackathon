@@ -2,7 +2,7 @@
     display: none;
   } 
 
- #bs{
+ #welcome{
      display: flex;
      flex-direction: column;
      align-content: center;
