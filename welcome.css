@@ -1,0 +1,8 @@
+.buttonz {
+    display: flex;
+    justify-content: center;
+}
+.welcome {
+    display: flex;
+    align-content: conter;
+}
