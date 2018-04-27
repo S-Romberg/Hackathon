@@ -6,7 +6,7 @@ var descList = [];
 var buttons = [1,2,3]
 var empty = []
 
-console.log(descList)
+
 fetch(beerAPI) 
 .then(response => response.json())
 .then(sortData)
@@ -56,7 +56,7 @@ function populateButtons(pTag){
 }
 
 function handleCorrect(event){
-  console.log('yay')
+  document.getElementById('reaction').textContent = 'YEAH YOU GOT IT RIGHT BITCH'
 }
 function handleWrong(event){
   fetch(drinkGif)
@@ -64,12 +64,15 @@ function handleWrong(event){
       return response.json();
   })
   .then(function(response){
+      if(empty.length < 10){
       var reactionGif = response.data.map(object => {
           var iframe = document.createElement('iframe')
           iframe.setAttribute('frameBorder', '0')
+          iframe.classList += 'reactionGif'
           iframe.src = object.embed_url
           return empty.push(iframe)
       })
+    }
   })
   document.getElementById('reaction').appendChild(empty[getRandomInt(10)])
 }
