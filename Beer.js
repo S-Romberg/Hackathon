@@ -6,10 +6,20 @@ fetch(beerAPI)
 
 function sortData(data){
     description(data) 
+    beerName()
     
 }
 function description(data){
-  console.log(data);
+  var description = data.map(newData => {
+    var beerDesco = document.createElement("p")
+    beerDesco.setAttribute("class", newData.name)
+      newData.description
+      
+      
+  }) 
+  
+  
+  
   
       
   
