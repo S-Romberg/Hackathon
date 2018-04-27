@@ -4,5 +4,5 @@
 }
 .welcome {
     display: flex;
-    align-content: conter;
+    text-align: center;
 }
