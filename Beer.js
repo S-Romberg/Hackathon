@@ -1,6 +1,6 @@
 const beerAPI = "https://api.punkapi.com/v2/beers"
 var descList = [];
-
+var buttons = [1,2,3]
 
 fetch(beerAPI) 
 .then(response => response.json())
@@ -33,5 +33,12 @@ function getRandomInt(max) {
 
 function populateButtons(pTag){
   console.log(pTag.classList.value);
-  
+  var buttonContent = buttons.forEach(yes => {
+    var createButton = document.createElement('button')
+    createButton.classList += 'beerButton'
+    createButton.textContent = descList[getRandomInt(25)].classList.value
+    document.getElementById('buttons').appendChild(createButton)
+    console.log(createButton.textContent)
+  })
+
 }
