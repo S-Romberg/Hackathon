@@ -2,6 +2,10 @@
     display: none;
   } 
 
-  .whatIs {
-      text-align: center;
-  }
+ #bs{
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+
+ }
+
