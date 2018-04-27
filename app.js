@@ -1,4 +1,4 @@
-const apiURL = "http://api.giphy.com/v1/gifs/search?q=kids+falling+over&api_key=Jt5TZH39Ei7DGga7jzbeddDvoU0FugCm&limit=8"
+const apiURL = "https://api.giphy.com/v1/gifs/search?q=kids+falling+over&api_key=Jt5TZH39Ei7DGga7jzbeddDvoU0FugCm&limit=8"
 
 fetch(apiURL)
     .then(function(response){
