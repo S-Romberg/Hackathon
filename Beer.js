@@ -64,14 +64,12 @@ function handleWrong(event){
       return response.json();
   })
   .then(function(response){
-      console.log(response.data);
-      var gif = response.data.map(object => {
+      var reactionGif = response.data.map(object => {
           var iframe = document.createElement('iframe')
           iframe.setAttribute('frameBorder', '0')
           iframe.src = object.embed_url
-          console.log(iframe.src)
           return empty.push(iframe)
       })
   })
-  console.log(empty)
+  document.getElementById('reaction').appendChild(empty[getRandomInt(10)])
 }
