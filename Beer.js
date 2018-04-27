@@ -22,9 +22,16 @@ function description(data){
   }) 
 }
 function chooseDescription(something){
-    return document.getElementById('description').textContent = descList[getRandomInt(25)]
+    let random = descList[getRandomInt(25)]
+    populateButtons(random)
+    return document.getElementById('description').appendChild(random)
 }
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
+}
+
+function populateButtons(pTag){
+  console.log(pTag.classList.value);
+  
 }

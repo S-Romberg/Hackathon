@@ -9,7 +9,7 @@ fetch(apiURL)
         var gif = response.data.map(object => {
             var iframe = document.createElement('iframe')
             iframe.setAttribute('frameBorder', '0')
-            document.getElementById('body').appendChild(iframe)
+            document.getElementById('bs').appendChild(iframe)
             return iframe.src = object.embed_url
         })
     })
