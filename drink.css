@@ -20,5 +20,11 @@ p{
     padding: 2em;
 }
 main{
-    height: 37em;
+    height: 51em;
+}
+html {
+    height: 100vh;
+}
+body {
+    height: 90vh;
 }
