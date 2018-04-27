@@ -2,9 +2,25 @@
 {
   font-size: 70px;
 }
-
+.team
+{
+  display: flex;
+  flex-direction: column;
+}
 .member
 {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+h3
+{
+  display: flex;
   font-size: 50px;
+}
+
+img
+{
+  height: 150px;
+  width: 150px;
 }
