@@ -56,7 +56,9 @@ function populateButtons(pTag){
 }
 
 function handleCorrect(event){
-  document.getElementById('reaction').textContent = 'YEAH YOU GOT IT RIGHT BITCH'
+  alert('YEAH YOU GOT IT RIGHT BITCH')
+  location.reload()
+
 }
 function handleWrong(event){
   fetch(drinkGif)
