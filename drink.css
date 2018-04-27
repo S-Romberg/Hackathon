@@ -17,4 +17,8 @@ p{
     justify-content: center;
     text-align: center;
     font-size: 1.5em;
+    padding: 2em;
+}
+main{
+    height: 37em;
 }
