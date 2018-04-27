@@ -4,18 +4,14 @@
     flex-direction: column;
     align-content: center;
     height: 38em;
-}.enterButton{
+}
+
+.enterButton{
     height: 4em;
     width: 10em;
     border-radius: 6%;
+    margin-left: 44.5vw;
 }
-/* button{ 
-    align-items: center;
-    margin: 3em 1em;
-    padding: 2em;
-    height: 6em;
-    width: 12em;
-    border: 1px black solid;
-    border-radius: 6%;
-    font-size: 1em;
-} */
+ button{ 
+    
+}
